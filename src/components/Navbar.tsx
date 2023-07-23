@@ -6,6 +6,8 @@ type RouteMapping = {
 };
 
 export default function Navbar() {
+  const title = "Carlton and Libby's Wedding";
+
   const routes: RouteMapping[] = [
     {
       text: "Home",
@@ -20,7 +22,7 @@ export default function Navbar() {
     <header className="w-100 border-b-2 border-b-dusty-rose">
       <div className="flex items-center pt-5">
         <h1 className="text-3xl font-bold flex items-center mx-auto">
-          Carlton and Libby's Wedding
+          {title}
         </h1>
       </div>
       <nav className="flex items-center">
