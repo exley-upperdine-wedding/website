@@ -6,7 +6,7 @@ type RouteMapping = {
 };
 
 export default function Navbar() {
-  const routes = [
+  const routes: RouteMapping[] = [
     {
       text: "Home",
       href: "/",
@@ -17,7 +17,12 @@ export default function Navbar() {
     },
   ];
   return (
-    <header className="max-w-screen-xl border-b-2 border-b-dusty-rose">
+    <header className="w-100 border-b-2 border-b-dusty-rose">
+      <div className="flex items-center pt-5">
+        <h1 className="text-3xl font-bold flex items-center mx-auto">
+          Carlton and Libby's Wedding
+        </h1>
+      </div>
       <nav className="flex items-center">
         <div className="flex items-center mx-auto py-5">
           {routes.map((route, i) => {

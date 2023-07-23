@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-greenery {
+  background-image: url(../../public/bg.jpg);
+}
